@@ -31,8 +31,16 @@ body {
     display: inline-block;
     position: relative;
     margin-right: 20px;
+    font-weight: bold;
+    font-size: 20px;
 }
+.navi ul li a:hover{
+    color: gold;
+    border: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
 
+}
 .navi ul li a {
     text-decoration: none;
     color: white;
@@ -79,8 +87,21 @@ body {
     gap: 20px;
     width: 100%;
 }
-
-.womens-fashion, .mens-fashion {
+.trending{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.trending-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.womens-fashion, .mens-fashion, .trending {
     background: #1a1a1a;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -91,10 +112,10 @@ body {
     padding: 20px;
     text-align: center;
     max-width: 500px; /* Limit the width of each item */
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.womens-fashion::before, .mens-fashion::before {
+.womens-fashion::before, .mens-fashion::before, .trending::before {
     content: '';
     position: absolute;
     top: -3px;
@@ -106,7 +127,7 @@ body {
     z-index: -1;
 }
 
-.womens-fashion::after, .mens-fashion::after {
+.womens-fashion::after, .mens-fashion::after, .trending::after {
     content: '';
     position: absolute;
     top: -8px;
@@ -119,21 +140,21 @@ body {
     z-index: -2;
 }
 
-.womens-fashion img, .mens-fashion img {
+.womens-fashion img, .mens-fashion img, .trending img {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
 }
 
-.womens-fashion h3, .mens-fashion h3 {
+.womens-fashion h3, .mens-fashion h3, .trending h3 {
     margin: 0 0 10px;
     font-size: 20px;
 }
 
-.womens-fashion p, .mens-fashion p {
+.womens-fashion p, .mens-fashion p, .trending p {
     margin: 0 0 20px;
-    font-size: 14px;
+    font-size: 16px;
     color: #ccc;
 }
 
@@ -157,7 +178,7 @@ body {
     background: gold;
 }
 
-.womens-fashion:hover, .mens-fashion:hover {
+.womens-fashion:hover, .mens-fashion:hover, .trending:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     color: gold;
