@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top */
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+.navi ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navi ul li {
+    display: inline-block;
+    position: relative;
+    margin-right: 20px;
+}
+
+.navi ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.navi ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure the submenu appears above other content */
+}
+
+.navi ul li:hover ul,
+.navi ul li ul:hover {
+    display: block;
+}
+
+.navi ul li ul li {
+    display: block;
+    margin: 0;
+}
+
+.navi ul li ul li a {
+    padding: 10px 15px;
+}
+
+.fashion {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.fashion-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.womens-fashion, .mens-fashion {
+    background: #1a1a1a;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    flex: 1 1 calc(50% - 40px); /* Adjust for margins/padding */
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    max-width: 500px; /* Limit the width of each item */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.womens-fashion::before, .mens-fashion::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    background: linear-gradient(45deg, #4f0dff, #ff00c8);
+    border-radius: 23px;
+    z-index: -1;
+}
+
+.womens-fashion::after, .mens-fashion::after {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    right: -8px;
+    bottom: -8px;
+    border-radius: 28px;
+    background: linear-gradient(transparent, transparent, rgba(79, 13, 255, 0.6));
+    filter: blur(10px);
+    z-index: -2;
+}
+
+.womens-fashion img, .mens-fashion img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #333;
+    margin-bottom: 20px;
+}
+
+.womens-fashion h3, .mens-fashion h3 {
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.womens-fashion p, .mens-fashion p {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.buy-button {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.buy-button a {
+    text-decoration: none;
+    color: #000;
+}
+
+.buy-button:hover {
+    background: gold;
+}
+
+.womens-fashion:hover, .mens-fashion:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    color: gold;
+}
+
+.hr{
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 15px;
+}
