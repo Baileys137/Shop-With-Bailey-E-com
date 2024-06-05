@@ -101,7 +101,21 @@ body {
     gap: 20px;
     width: 100%;
 }
-.womens-fashion, .mens-fashion, .trending {
+.mobile-phone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+.mobile-section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+.womens-fashion, .mens-fashion, .trending, .mobile-phone{
     background: #1a1a1a;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -115,7 +129,7 @@ body {
     transition: transform 0.1s, box-shadow 0.1s;
 }
 
-.womens-fashion::before, .mens-fashion::before, .trending::before {
+.womens-fashion::before, .mens-fashion::before, .trending::before, .mobile-phone::before {
     content: '';
     position: absolute;
     top: -3px;
@@ -127,7 +141,7 @@ body {
     z-index: -1;
 }
 
-.womens-fashion::after, .mens-fashion::after, .trending::after {
+.womens-fashion::after, .mens-fashion::after, .trending::after, .mobile-phone::after {
     content: '';
     position: absolute;
     top: -8px;
@@ -140,19 +154,19 @@ body {
     z-index: -2;
 }
 
-.womens-fashion img, .mens-fashion img, .trending img {
+.womens-fashion img, .mens-fashion img, .trending img, .mobile-phone img {
     width: 100%;
     height: auto;
     border-bottom: 1px solid #333;
     margin-bottom: 20px;
 }
 
-.womens-fashion h3, .mens-fashion h3, .trending h3 {
+.womens-fashion h3, .mens-fashion h3, .trending h3, .mobile-phone h3 {
     margin: 0 0 10px;
     font-size: 20px;
 }
 
-.womens-fashion p, .mens-fashion p, .trending p {
+.womens-fashion p, .mens-fashion p, .trending p, .mobile-phone p {
     margin: 0 0 20px;
     font-size: 16px;
     color: #ccc;
@@ -178,7 +192,7 @@ body {
     background: gold;
 }
 
-.womens-fashion:hover, .mens-fashion:hover, .trending:hover {
+.womens-fashion:hover, .mens-fashion:hover, .trending:hover, .mobile-phone:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     color: gold;
